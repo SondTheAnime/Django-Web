@@ -2,3 +2,6 @@
 
 # Ambiete Virtual
 .venv
+
+# Secrets
+secrets.json
