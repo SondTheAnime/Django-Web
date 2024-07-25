@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "produtos/css/inserir_produto.css" %}">
+    </head>
+    <body>
+        <h1>Inserir Produto</h1>
+        <form action="{% url "inserir_produto" %}" method="POST">
+            {% csrf_token %}
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" name="descricao" required></textarea><br><br>
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" name="preco" required><br><br>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required><br><br>
+            <button type="submit">Inserir</button>
+        </form>
+    </body>
+</html>

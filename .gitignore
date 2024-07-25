@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ambiete Virtual
+.venv

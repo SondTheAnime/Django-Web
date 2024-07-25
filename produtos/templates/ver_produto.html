@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produtos</title>
+    <link rel="stylesheet" href="{% static "produtos/css/ver_produto.css" %}">
+</head>
+<body>
+    <h1>Produtos - {{nome}}</h1>
+    <ul>
+        <li>
+            <a class="detalhes" href="">Detalhes</a>
+        </li>
+    </ul>
+    <img src="{% static "produtos/img/cobra.png" %}">
+</body>
+</html>
